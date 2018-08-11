@@ -12,13 +12,44 @@
       right: 0 !important;
       left: 350px !important;
     }
+
+    .profile-info {
+      position: relative;
+      height: 200px;
+      background: url('../../assets/images/bg.png');
+      background-size: cover;
+      &-name {
+        position: absolute;
+        bottom: 16px;
+        left: 16px;
+        color: white;
+      }
+    }
   }
 
   &-toolbar {
+    display: flex;
     padding: 24px;
     background-color: #41b7b7;
     * {
       color: white !important;
+    }
+    .stretch {
+      flex: 1;
+    }
+  }
+
+  &-logout-button:hover {
+    background-color: transparent !important;
+  }
+
+  .sidebar {
+    .item {
+      text-align: left !important;
+      padding: 16px;
+    }
+    .item:hover {
+      background-color: #131313 !important;
     }
   }
 }
